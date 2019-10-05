@@ -1,2 +1,5 @@
 3.3V:
 https://webench.ti.com/appinfo/webench/scripts/SDP.cgi?ID=2090FCD25917F430
+
+5v:
+https://webench.ti.com/appinfo/webench/scripts/SDP.cgi?ID=18E0656881CC7613
