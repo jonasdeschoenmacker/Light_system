@@ -428,15 +428,15 @@
 </packages3d>
 <symbols>
 <symbol name="TPS54308DDCT">
-<pin name="GND" x="2.54" y="0" length="middle" direction="pas"/>
-<pin name="SW" x="2.54" y="-2.54" length="middle" direction="pas"/>
-<pin name="VIN" x="2.54" y="-5.08" length="middle" direction="pas"/>
-<pin name="FB" x="38.1" y="-5.08" length="middle" direction="pas" rot="R180"/>
-<pin name="EN" x="38.1" y="-2.54" length="middle" direction="pas" rot="R180"/>
-<pin name="BOOT" x="38.1" y="0" length="middle" direction="pas" rot="R180"/>
-<wire x1="7.62" y1="5.08" x2="7.62" y2="-10.16" width="0.1524" layer="94"/>
-<wire x1="7.62" y1="-10.16" x2="33.02" y2="-10.16" width="0.1524" layer="94"/>
-<wire x1="33.02" y1="-10.16" x2="33.02" y2="5.08" width="0.1524" layer="94"/>
+<pin name="GND" x="38.1" y="-12.7" length="middle" direction="pas" rot="R180"/>
+<pin name="SW" x="38.1" y="-2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="VIN" x="2.54" y="2.54" length="middle" direction="pas"/>
+<pin name="FB" x="38.1" y="-7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="EN" x="2.54" y="-2.54" length="middle" direction="pas"/>
+<pin name="BOOT" x="38.1" y="2.54" length="middle" direction="pas" rot="R180"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="-15.24" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-15.24" x2="33.02" y2="-15.24" width="0.1524" layer="94"/>
+<wire x1="33.02" y1="-15.24" x2="33.02" y2="5.08" width="0.1524" layer="94"/>
 <wire x1="33.02" y1="5.08" x2="7.62" y2="5.08" width="0.1524" layer="94"/>
 <text x="15.5956" y="9.1186" size="2.0828" layer="95" ratio="6" rot="SR0">&gt;Name</text>
 <text x="14.9606" y="6.5786" size="2.0828" layer="96" ratio="6" rot="SR0">&gt;Value</text>
