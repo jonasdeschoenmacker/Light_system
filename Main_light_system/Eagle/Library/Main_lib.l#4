@@ -1306,6 +1306,20 @@
 <pin name="19" x="-5.08" y="-22.86" visible="pad" length="short" direction="pas" swaplevel="1"/>
 <pin name="20" x="-5.08" y="-25.4" visible="pad" length="short" direction="pas" swaplevel="1"/>
 </symbol>
+<symbol name="SDA">
+<description>&lt;h3&gt;VCC1 Voltage Supply&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<pin name="SDA" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
+</symbol>
+<symbol name="SCL">
+<description>&lt;h3&gt;VCC1 Voltage Supply&lt;/h3&gt;</description>
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<pin name="SCL" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TPS54308DDCT" prefix="U">
@@ -1650,6 +1664,32 @@ Updated  by  Dan Xu 2014-07-08&lt;br&gt;
 <connect gate="G$1" pin="8" pad="8"/>
 <connect gate="G$1" pin="9" pad="9"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SDA" prefix="SUPPLY">
+<description>&lt;h3&gt;VCC1 Voltage Supply&lt;/h3&gt;
+&lt;p&gt;Primary VCC voltage supply - Useful for a system with multiple VCC supplies.&lt;/p&gt;</description>
+<gates>
+<gate name="SDA" symbol="SDA" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SCL">
+<gates>
+<gate name="SCL" symbol="SCL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
