@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.2">
+<eagle version="9.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -15947,6 +15948,101 @@ Source: AVX .. aphvc.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="Main_lib">
+<packages>
+<package name="MA04-2" urn="urn:adsk.eagle:footprint:8328/1">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-4.445" y1="2.54" x2="-3.175" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="2.54" x2="-2.54" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="1.905" x2="-1.905" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="2.54" x2="-0.635" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="2.54" x2="0" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="2.54" x2="-5.08" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="0" y1="1.905" x2="0.635" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="2.54" x2="1.905" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="2.54" x2="2.54" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="2.54" x2="4.445" y2="2.54" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="2.54" x2="2.54" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="4.445" y1="2.54" x2="5.08" y2="1.905" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="1.905" x2="5.08" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-1.905" x2="-3.175" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="0" y1="-1.905" x2="-0.635" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-2.54" x2="-1.905" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="-2.54" x2="-2.54" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="1.905" x2="-5.08" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-1.905" x2="-4.445" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="-2.54" x2="-4.445" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-1.905" x2="1.905" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-2.54" x2="0.635" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-2.54" x2="0" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-1.905" x2="3.175" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="4.445" y1="-2.54" x2="3.175" y2="-2.54" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="-1.905" x2="4.445" y2="-2.54" width="0.1524" layer="21"/>
+<pad name="1" x="-3.81" y="-1.27" drill="1.016" shape="octagon"/>
+<pad name="3" x="-1.27" y="-1.27" drill="1.016" shape="octagon"/>
+<pad name="5" x="1.27" y="-1.27" drill="1.016" shape="octagon"/>
+<pad name="7" x="3.81" y="-1.27" drill="1.016" shape="octagon"/>
+<pad name="2" x="-3.81" y="1.27" drill="1.016" shape="octagon"/>
+<pad name="4" x="-1.27" y="1.27" drill="1.016" shape="octagon"/>
+<pad name="6" x="1.27" y="1.27" drill="1.016" shape="octagon"/>
+<pad name="8" x="3.81" y="1.27" drill="1.016" shape="octagon"/>
+<text x="-4.318" y="-4.191" size="1.27" layer="21" ratio="10">1</text>
+<text x="-5.08" y="2.921" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="0" y="-4.191" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="3.81" y="2.921" size="1.27" layer="21" ratio="10">8</text>
+<rectangle x1="-1.524" y1="-1.524" x2="-1.016" y2="-1.016" layer="51"/>
+<rectangle x1="-4.064" y1="-1.524" x2="-3.556" y2="-1.016" layer="51"/>
+<rectangle x1="1.016" y1="-1.524" x2="1.524" y2="-1.016" layer="51"/>
+<rectangle x1="3.556" y1="-1.524" x2="4.064" y2="-1.016" layer="51"/>
+<rectangle x1="-4.064" y1="1.016" x2="-3.556" y2="1.524" layer="51"/>
+<rectangle x1="-1.524" y1="1.016" x2="-1.016" y2="1.524" layer="51"/>
+<rectangle x1="1.016" y1="1.016" x2="1.524" y2="1.524" layer="51"/>
+<rectangle x1="3.556" y1="1.016" x2="4.064" y2="1.524" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="PIN8">
+<wire x1="-2.54" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-20.32" x2="-2.54" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-20.32" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<text x="-2.54" y="3.81" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-22.86" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-5.08" y="0" visible="pin" length="short" direction="in"/>
+<pin name="2" x="-5.08" y="-2.54" visible="pin" length="short" direction="in"/>
+<pin name="3" x="-5.08" y="-5.08" visible="pin" length="short" direction="in"/>
+<pin name="4" x="-5.08" y="-7.62" visible="pin" length="short" direction="in"/>
+<pin name="5" x="-5.08" y="-10.16" visible="pin" length="short" direction="in"/>
+<pin name="6" x="-5.08" y="-12.7" visible="pin" length="short" direction="in"/>
+<pin name="7" x="-5.08" y="-15.24" visible="pin" length="short" direction="in"/>
+<pin name="8" x="-5.08" y="-17.78" visible="pin" length="short" direction="in"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MODULARCONNECTOR">
+<gates>
+<gate name="G$1" symbol="PIN8" x="2.54" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="MA04-2">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -16048,25 +16144,25 @@ Source: AVX .. aphvc.pdf</description>
 </instance>
 <instance part="CR1" gate="A" x="86.36" y="134.62">
 <attribute name="NAME" x="124.8156" y="143.7386" size="2.0828" layer="95" ratio="6" rot="SR0"/>
-<attribute name="VALUE" x="109.7026" y="140.6906" size="2.0828" layer="96" ratio="6" rot="SR0"/>
+<attribute name="VALUE" x="124.1806" y="141.1986" size="2.0828" layer="96" ratio="6" rot="SR0"/>
 </instance>
 <instance part="+3V1" gate="G$1" x="83.82" y="152.4">
-<attribute name="VALUE" x="91.948" y="152.654" size="1.778" layer="96" rot="R180"/>
+<attribute name="VALUE" x="81.28" y="147.32" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="+3V2" gate="G$1" x="71.12" y="116.84">
-<attribute name="VALUE" x="78.994" y="117.348" size="1.778" layer="96" rot="R180"/>
+<attribute name="VALUE" x="68.58" y="111.76" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="+3V3" gate="G$1" x="78.74" y="58.42">
-<attribute name="VALUE" x="76.962" y="58.928" size="1.778" layer="96" rot="R180"/>
+<attribute name="VALUE" x="76.2" y="53.34" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="+3V4" gate="G$1" x="172.72" y="137.16">
 <attribute name="VALUE" x="170.18" y="132.08" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="+3V5" gate="G$1" x="180.34" y="96.52">
-<attribute name="VALUE" x="188.468" y="97.028" size="1.778" layer="96" rot="R180"/>
+<attribute name="VALUE" x="177.8" y="91.44" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND1" gate="1" x="83.82" y="58.42" rot="R270">
-<attribute name="VALUE" x="78.486" y="59.182" size="1.778" layer="96"/>
+<attribute name="VALUE" x="81.28" y="60.96" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="GND2" gate="1" x="175.26" y="132.08" rot="R90">
 <attribute name="VALUE" x="177.8" y="129.54" size="1.778" layer="96" rot="R90"/>
@@ -16075,17 +16171,17 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="VALUE" x="177.8" y="86.36" size="1.778" layer="96"/>
 </instance>
 <instance part="GND4" gate="1" x="81.28" y="106.68" rot="R270">
-<attribute name="VALUE" x="78.994" y="109.22" size="1.778" layer="96"/>
+<attribute name="VALUE" x="78.74" y="109.22" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="+3V6" gate="G$1" x="73.66" y="91.44">
-<attribute name="VALUE" x="72.136" y="91.948" size="1.778" layer="96" rot="R180"/>
+<attribute name="VALUE" x="71.12" y="86.36" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND5" gate="1" x="78.74" y="91.44" rot="R270">
-<attribute name="VALUE" x="73.914" y="91.694" size="1.778" layer="96"/>
+<attribute name="VALUE" x="76.2" y="93.98" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="JP1" gate="A" x="71.12" y="139.7" rot="MR0">
 <attribute name="NAME" x="77.47" y="147.955" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="77.47" y="132.08" size="1.778" layer="96" rot="MR0"/>
+<attribute name="VALUE" x="77.47" y="129.54" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="GND6" gate="1" x="78.74" y="129.54">
 <attribute name="VALUE" x="76.2" y="127" size="1.778" layer="96"/>
@@ -16099,7 +16195,7 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="VALUE" x="21.59" y="58.42" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="+3V7" gate="G$1" x="25.4" y="76.2">
-<attribute name="VALUE" x="33.782" y="76.2" size="1.778" layer="96" rot="R180"/>
+<attribute name="VALUE" x="22.86" y="71.12" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND7" gate="1" x="25.4" y="58.42">
 <attribute name="VALUE" x="22.86" y="55.88" size="1.778" layer="96"/>
@@ -16108,47 +16204,47 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="VALUE" x="236.22" y="114.3" size="1.778" layer="96"/>
 </instance>
 <instance part="+3V8" gate="G$1" x="238.76" y="134.62">
-<attribute name="VALUE" x="246.38" y="134.62" size="1.778" layer="96" rot="R180"/>
+<attribute name="VALUE" x="236.22" y="129.54" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R1" gate="G$1" x="30.48" y="66.04">
-<attribute name="NAME" x="29.21" y="67.5386" size="1.778" layer="95"/>
-<attribute name="VALUE" x="27.686" y="62.738" size="1.778" layer="96"/>
+<attribute name="NAME" x="26.67" y="67.5386" size="1.778" layer="95"/>
+<attribute name="VALUE" x="26.67" y="62.738" size="1.778" layer="96"/>
 </instance>
 <instance part="R2" gate="G$1" x="233.68" y="124.46">
 <attribute name="NAME" x="229.87" y="125.9586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="229.87" y="121.158" size="1.778" layer="96"/>
 </instance>
 <instance part="S1" gate="1" x="15.24" y="114.3">
-<attribute name="NAME" x="10.16" y="115.57" size="1.778" layer="95" rot="R180"/>
+<attribute name="NAME" x="8.89" y="111.76" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="11.43" y="117.475" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="+3V9" gate="G$1" x="15.24" y="137.16">
-<attribute name="VALUE" x="18.034" y="139.954" size="1.778" layer="96" rot="R180"/>
+<attribute name="VALUE" x="12.7" y="132.08" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND9" gate="1" x="15.24" y="104.14">
 <attribute name="VALUE" x="12.7" y="101.6" size="1.778" layer="96"/>
 </instance>
 <instance part="R3" gate="G$1" x="15.24" y="127" rot="R90">
-<attribute name="NAME" x="20.066" y="128.8034" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="23.114" y="126.492" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="13.7414" y="123.19" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="18.542" y="123.19" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="Q1" gate="G$1" x="53.34" y="124.46" rot="R90">
-<attribute name="NAME" x="51.562" y="125.476" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="66.548" y="129.794" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="52.324" y="127" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="55.88" y="127" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="C1" gate="G$1" x="40.64" y="121.92" rot="R90">
-<attribute name="NAME" x="40.64" y="124.333" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="47.244" y="126.111" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="40.259" y="123.444" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="45.339" y="123.444" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="C2" gate="G$1" x="40.64" y="132.08" rot="R90">
-<attribute name="NAME" x="40.386" y="134.493" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="46.99" y="136.525" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="40.259" y="133.604" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="45.339" y="133.604" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND10" gate="1" x="33.02" y="121.92" rot="R270">
-<attribute name="VALUE" x="27.686" y="121.158" size="1.778" layer="96"/>
+<attribute name="VALUE" x="30.48" y="124.46" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="GND11" gate="1" x="33.02" y="132.08" rot="R270">
-<attribute name="VALUE" x="27.94" y="131.318" size="1.778" layer="96"/>
+<attribute name="VALUE" x="30.48" y="134.62" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="C3" gate="G$1" x="25.4" y="111.76">
 <attribute name="NAME" x="26.924" y="112.141" size="1.778" layer="95"/>
@@ -16179,15 +16275,15 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="VALUE" x="232.664" y="155.321" size="1.778" layer="96"/>
 </instance>
 <instance part="C10" gate="G$1" x="71.12" y="111.76">
-<attribute name="NAME" x="63.754" y="111.125" size="1.778" layer="95"/>
-<attribute name="VALUE" x="63.754" y="108.077" size="1.778" layer="96"/>
+<attribute name="NAME" x="72.644" y="112.141" size="1.778" layer="95"/>
+<attribute name="VALUE" x="72.644" y="107.061" size="1.778" layer="96"/>
 </instance>
 <instance part="C11" gate="G$1" x="241.3" y="160.02">
 <attribute name="NAME" x="242.824" y="160.401" size="1.778" layer="95"/>
 <attribute name="VALUE" x="242.824" y="155.321" size="1.778" layer="96"/>
 </instance>
 <instance part="+3V10" gate="G$1" x="241.3" y="170.18">
-<attribute name="VALUE" x="244.094" y="172.72" size="1.778" layer="96" rot="R180"/>
+<attribute name="VALUE" x="238.76" y="165.1" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND12" gate="1" x="241.3" y="149.86">
 <attribute name="VALUE" x="238.76" y="147.32" size="1.778" layer="96"/>
@@ -16646,8 +16742,6 @@ Source: AVX .. aphvc.pdf</description>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="JP1" library="jumper" deviceset="JP4Q" device=""/>
-<part name="JP2" library="jumper" deviceset="JP4Q" device=""/>
-<part name="JP3" library="jumper" deviceset="JP4Q" device=""/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="C1" library="resistor" deviceset="C-EU" device="C1206" value="100nF"/>
@@ -16658,10 +16752,8 @@ Source: AVX .. aphvc.pdf</description>
 <part name="C5" library="resistor" deviceset="C-EU" device="C1206" value="100nF"/>
 <part name="C6" library="resistor" deviceset="C-EU" device="C1206" value="100nF"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="+3V7" library="supply1" deviceset="+3V3" device=""/>
-<part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="GND8" library="supply1" deviceset="GND" device=""/>
-<part name="+3V8" library="supply1" deviceset="+3V3" device=""/>
+<part name="U$1" library="Main_lib" deviceset="MODULARCONNECTOR" device=""/>
+<part name="U$2" library="Main_lib" deviceset="MODULARCONNECTOR" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16730,36 +16822,53 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="GND4" gate="1" x="40.64" y="83.82">
 <attribute name="VALUE" x="38.1" y="81.28" size="1.778" layer="96"/>
 </instance>
-<instance part="JP1" gate="B" x="35.56" y="154.94" rot="R270"/>
-<instance part="JP2" gate="B" x="43.18" y="60.96" rot="R270"/>
-<instance part="JP3" gate="B" x="175.26" y="50.8" rot="R270"/>
+<instance part="JP1" gate="B" x="35.56" y="154.94" rot="R270">
+<attribute name="NAME" x="30.48" y="160.02" size="1.778" layer="95"/>
+<attribute name="VALUE" x="30.48" y="145.415" size="1.778" layer="96"/>
+</instance>
 <instance part="+3V5" gate="G$1" x="25.4" y="162.56">
 <attribute name="VALUE" x="22.86" y="157.48" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND5" gate="1" x="45.72" y="144.78">
 <attribute name="VALUE" x="43.18" y="142.24" size="1.778" layer="96"/>
 </instance>
-<instance part="C1" gate="G$1" x="58.42" y="88.9" rot="R90"/>
+<instance part="C1" gate="G$1" x="58.42" y="88.9" rot="R90">
+<attribute name="NAME" x="58.039" y="90.424" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="63.119" y="90.424" size="1.778" layer="96" rot="R90"/>
+</instance>
 <instance part="+3V6" gate="G$1" x="208.28" y="170.18">
 <attribute name="VALUE" x="205.74" y="165.1" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="C2" gate="G$1" x="208.28" y="160.02" rot="R180"/>
-<instance part="C3" gate="G$1" x="195.58" y="160.02" rot="R180"/>
-<instance part="C4" gate="G$1" x="182.88" y="160.02" rot="R180"/>
-<instance part="C5" gate="G$1" x="170.18" y="160.02" rot="R180"/>
-<instance part="C6" gate="G$1" x="157.48" y="160.02" rot="R180"/>
-<instance part="GND6" gate="1" x="208.28" y="152.4"/>
-<instance part="+3V7" gate="G$1" x="33.02" y="68.58">
-<attribute name="VALUE" x="30.48" y="63.5" size="1.778" layer="96" rot="R90"/>
+<instance part="C2" gate="G$1" x="208.28" y="160.02" rot="R180">
+<attribute name="NAME" x="206.756" y="159.639" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="206.756" y="164.719" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND7" gate="1" x="53.34" y="50.8">
-<attribute name="VALUE" x="50.8" y="48.26" size="1.778" layer="96"/>
+<instance part="C3" gate="G$1" x="195.58" y="160.02" rot="R180">
+<attribute name="NAME" x="194.056" y="159.639" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="194.056" y="164.719" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND8" gate="1" x="185.42" y="40.64">
-<attribute name="VALUE" x="182.88" y="38.1" size="1.778" layer="96"/>
+<instance part="C4" gate="G$1" x="182.88" y="160.02" rot="R180">
+<attribute name="NAME" x="181.356" y="159.639" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="181.356" y="164.719" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="+3V8" gate="G$1" x="165.1" y="58.42">
-<attribute name="VALUE" x="162.56" y="53.34" size="1.778" layer="96" rot="R90"/>
+<instance part="C5" gate="G$1" x="170.18" y="160.02" rot="R180">
+<attribute name="NAME" x="168.656" y="159.639" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="168.656" y="164.719" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="C6" gate="G$1" x="157.48" y="160.02" rot="R180">
+<attribute name="NAME" x="155.956" y="159.639" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="155.956" y="164.719" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="GND6" gate="1" x="208.28" y="152.4">
+<attribute name="VALUE" x="205.74" y="149.86" size="1.778" layer="96"/>
+</instance>
+<instance part="U$1" gate="G$1" x="71.12" y="66.04">
+<attribute name="NAME" x="68.58" y="69.85" size="1.778" layer="95"/>
+<attribute name="VALUE" x="68.58" y="43.18" size="1.778" layer="96"/>
+</instance>
+<instance part="U$2" gate="G$1" x="88.9" y="66.04">
+<attribute name="NAME" x="86.36" y="69.85" size="1.778" layer="95"/>
+<attribute name="VALUE" x="86.36" y="43.18" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -16812,18 +16921,6 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="195.58" y1="165.1" x2="195.58" y2="167.64" width="0.1524" layer="91"/>
 <junction x="195.58" y="167.64"/>
-</segment>
-<segment>
-<pinref part="+3V7" gate="G$1" pin="+3V3"/>
-<wire x1="33.02" y1="66.04" x2="33.02" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="JP2" gate="B" pin="1"/>
-<wire x1="33.02" y1="63.5" x2="35.56" y2="63.5" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="JP3" gate="B" pin="1"/>
-<wire x1="167.64" y1="53.34" x2="165.1" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="+3V8" gate="G$1" pin="+3V3"/>
-<wire x1="165.1" y1="53.34" x2="165.1" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -16883,18 +16980,6 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="GND6" gate="1" pin="GND"/>
 <junction x="208.28" y="154.94"/>
 </segment>
-<segment>
-<pinref part="JP2" gate="B" pin="8"/>
-<wire x1="50.8" y1="55.88" x2="53.34" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="53.34" y1="55.88" x2="53.34" y2="53.34" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="JP3" gate="B" pin="8"/>
-<wire x1="182.88" y1="45.72" x2="185.42" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="GND8" gate="1" pin="GND"/>
-<wire x1="185.42" y1="45.72" x2="185.42" y2="43.18" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="N$3" class="0">
 <segment>
@@ -16916,4 +17001,11 @@ Source: AVX .. aphvc.pdf</description>
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+</compatibility>
 </eagle>
