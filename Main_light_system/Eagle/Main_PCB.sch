@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.4.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -498,14 +498,6 @@
 </package>
 <package name="FE20-2" urn="urn:adsk.eagle:footprint:8109/1" locally_modified="yes">
 <description>&lt;b&gt;FEMALE HEADER&lt;/b&gt;</description>
-<wire x1="-25.4" y1="-2.413" x2="-25.4" y2="2.413" width="0.1524" layer="21"/>
-<wire x1="-25.4" y1="2.413" x2="-24.765" y2="3.048" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-25.4" y1="-2.413" x2="-24.765" y2="-3.048" width="0.1524" layer="21" curve="90"/>
-<wire x1="-24.765" y1="3.048" x2="24.765" y2="3.048" width="0.1524" layer="21"/>
-<wire x1="25.4" y1="-2.413" x2="25.4" y2="2.413" width="0.1524" layer="21"/>
-<wire x1="-24.765" y1="-3.048" x2="24.765" y2="-3.048" width="0.1524" layer="21"/>
-<wire x1="24.765" y1="3.048" x2="25.4" y2="2.413" width="0.1524" layer="21" curve="-90"/>
-<wire x1="24.765" y1="-3.048" x2="25.4" y2="-2.413" width="0.1524" layer="21" curve="90"/>
 <circle x="-24.13" y="-1.27" radius="0.127" width="0.4064" layer="51"/>
 <circle x="-24.13" y="1.27" radius="0.127" width="0.4064" layer="51"/>
 <circle x="-21.59" y="-1.27" radius="0.127" width="0.4064" layer="51"/>
@@ -626,10 +618,18 @@
 <pad name="37" x="21.59" y="-1.27" drill="0.9144" shape="octagon"/>
 <pad name="40" x="24.13" y="1.27" drill="0.9144" shape="octagon"/>
 <pad name="39" x="24.13" y="-1.27" drill="0.9144" shape="octagon"/>
-<text x="-20.32" y="3.429" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-24.511" y="3.429" size="1.27" layer="21" ratio="10">1</text>
+<text x="-25.32" y="-8.571" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-27.511" y="1.429" size="1.27" layer="21" ratio="10">1</text>
 <text x="-25.4" y="-4.699" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <text x="23.241" y="-4.699" size="1.27" layer="21" ratio="10">40</text>
+<wire x1="-32.5" y1="3.5" x2="32.5" y2="3.5" width="0.127" layer="21"/>
+<wire x1="32.5" y1="3.5" x2="32.5" y2="-26.5" width="0.127" layer="21"/>
+<wire x1="32.5" y1="-26.5" x2="-32.5" y2="-26.5" width="0.127" layer="21"/>
+<wire x1="-32.5" y1="-26.5" x2="-32.5" y2="3.5" width="0.127" layer="21"/>
+<wire x1="-26" y1="2.5" x2="-26" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-26" y1="-2.5" x2="26" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="26" y1="-2.5" x2="26" y2="2.5" width="0.127" layer="21"/>
+<wire x1="26" y1="2.5" x2="-26" y2="2.5" width="0.127" layer="21"/>
 </package>
 <package name="MA04-2" urn="urn:adsk.eagle:footprint:8328/1">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
@@ -1903,7 +1903,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY3" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
 <part name="GND11" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="GND12" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="SUPPLY4" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
 <part name="SUPPLY5" library="Main_lib" deviceset="SDA" device=""/>
 <part name="SUPPLY6" library="Main_lib" deviceset="SDA" device=""/>
 <part name="SUPPLY7" library="Main_lib" deviceset="SDA" device=""/>
@@ -1911,6 +1910,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U$7" library="Main_lib" deviceset="SCL" device=""/>
 <part name="U$8" library="Main_lib" deviceset="SCL" device=""/>
 <part name="SUPPLY8" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
+<part name="SUPPLY4" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1921,13 +1921,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="81.28" y="84.074" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="81.28" y="82.042" size="1.778" layer="96" font="vector" align="top-left"/>
 </instance>
-<instance part="U$2" gate="G$1" x="12.7" y="76.2" smashed="yes" rot="MR0">
-<attribute name="NAME" x="15.24" y="80.01" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="15.24" y="53.34" size="1.778" layer="96" rot="MR0"/>
+<instance part="U$2" gate="G$1" x="2.54" y="76.2" smashed="yes" rot="MR0">
+<attribute name="NAME" x="5.08" y="80.01" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="5.08" y="53.34" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="U$3" gate="G$1" x="12.7" y="45.72" smashed="yes" rot="MR0">
-<attribute name="NAME" x="15.24" y="49.53" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="15.24" y="22.86" size="1.778" layer="96" rot="MR0"/>
+<instance part="U$3" gate="G$1" x="2.54" y="43.18" smashed="yes" rot="MR0">
+<attribute name="NAME" x="5.08" y="46.99" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="5.08" y="20.32" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="SUPPLY1" gate="G$1" x="71.12" y="83.82" smashed="yes">
 <attribute name="VALUE" x="71.12" y="86.614" size="1.778" layer="96" align="bottom-center"/>
@@ -1949,35 +1949,35 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="125.095" y="78.74" size="1.778" layer="95"/>
 <attribute name="VALUE" x="125.095" y="23.8125" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY3" gate="G$1" x="22.86" y="81.28" smashed="yes">
-<attribute name="VALUE" x="22.86" y="84.074" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY3" gate="G$1" x="12.7" y="81.28" smashed="yes">
+<attribute name="VALUE" x="12.7" y="86.614" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="GND11" gate="1" x="30.48" y="22.86" smashed="yes">
-<attribute name="VALUE" x="30.48" y="22.606" size="1.778" layer="96" align="top-center"/>
+<instance part="GND11" gate="1" x="20.32" y="20.32" smashed="yes">
+<attribute name="VALUE" x="20.32" y="20.066" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="GND12" gate="1" x="30.48" y="55.88" smashed="yes">
-<attribute name="VALUE" x="30.48" y="55.626" size="1.778" layer="96" align="top-center"/>
+<instance part="GND12" gate="1" x="20.32" y="55.88" smashed="yes">
+<attribute name="VALUE" x="20.32" y="55.626" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="SUPPLY4" gate="G$1" x="22.86" y="48.26" smashed="yes">
-<attribute name="VALUE" x="22.86" y="51.054" size="1.778" layer="96" align="bottom-center"/>
-</instance>
-<instance part="SUPPLY5" gate="SDA" x="27.94" y="78.74" smashed="yes">
-<attribute name="VALUE" x="27.94" y="81.534" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY5" gate="SDA" x="27.94" y="81.28" smashed="yes">
+<attribute name="VALUE" x="27.94" y="86.614" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="SUPPLY6" gate="SDA" x="53.34" y="91.44" smashed="yes">
 <attribute name="VALUE" x="53.34" y="94.234" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="SUPPLY7" gate="SDA" x="27.94" y="45.72" smashed="yes">
-<attribute name="VALUE" x="27.94" y="48.514" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY7" gate="SDA" x="27.94" y="43.18" smashed="yes">
+<attribute name="VALUE" x="27.94" y="45.974" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="U$6" gate="SCL" x="33.02" y="43.18" smashed="yes">
-<attribute name="VALUE" x="33.02" y="45.974" size="1.778" layer="96" align="bottom-center"/>
+<instance part="U$6" gate="SCL" x="35.56" y="43.18" smashed="yes">
+<attribute name="VALUE" x="35.56" y="45.974" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="U$7" gate="SCL" x="33.02" y="73.66" smashed="yes">
-<attribute name="VALUE" x="33.02" y="76.454" size="1.778" layer="96" align="bottom-center"/>
+<instance part="U$7" gate="SCL" x="35.56" y="81.28" smashed="yes">
+<attribute name="VALUE" x="35.56" y="86.614" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="U$8" gate="SCL" x="66.04" y="91.44" smashed="yes">
 <attribute name="VALUE" x="66.04" y="94.234" size="1.778" layer="96" align="bottom-center"/>
+</instance>
+<instance part="SUPPLY4" gate="G$1" x="12.7" y="45.72" smashed="yes">
+<attribute name="VALUE" x="12.7" y="48.514" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 </instances>
 <busses>
@@ -2221,15 +2221,24 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="109.22" y="71.12"/>
 </segment>
 <segment>
-<pinref part="GND11" gate="1" pin="GND"/>
-<pinref part="U$3" gate="G$1" pin="8"/>
-<wire x1="30.48" y1="27.94" x2="30.48" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="27.94" x2="30.48" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="7"/>
+<wire x1="7.62" y1="60.96" x2="20.32" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="GND12" gate="1" pin="GND"/>
+<wire x1="20.32" y1="60.96" x2="20.32" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="2"/>
+<wire x1="7.62" y1="73.66" x2="20.32" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="73.66" x2="20.32" y2="60.96" width="0.1524" layer="91"/>
+<junction x="20.32" y="60.96"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="8"/>
-<wire x1="17.78" y1="58.42" x2="30.48" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="GND12" gate="1" pin="GND"/>
+<pinref part="U$3" gate="G$1" pin="7"/>
+<wire x1="7.62" y1="27.94" x2="20.32" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="GND11" gate="1" pin="GND"/>
+<wire x1="20.32" y1="27.94" x2="20.32" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="2"/>
+<wire x1="7.62" y1="40.64" x2="20.32" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="40.64" x2="20.32" y2="27.94" width="0.1524" layer="91"/>
+<junction x="20.32" y="27.94"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -2250,15 +2259,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="SUPPLY3" gate="G$1" pin="3.3V"/>
-<wire x1="22.86" y1="81.28" x2="22.86" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="81.28" x2="12.7" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="1"/>
-<wire x1="22.86" y1="76.2" x2="17.78" y2="76.2" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$3" gate="G$1" pin="1"/>
-<wire x1="17.78" y1="45.72" x2="22.86" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="SUPPLY4" gate="G$1" pin="3.3V"/>
-<wire x1="22.86" y1="45.72" x2="22.86" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="76.2" x2="7.62" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="76.2" x2="12.7" y2="58.42" width="0.1524" layer="91"/>
+<junction x="12.7" y="76.2"/>
+<pinref part="U$2" gate="G$1" pin="8"/>
+<wire x1="12.7" y1="58.42" x2="7.62" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -2277,14 +2284,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="106.68" y1="76.2" x2="106.68" y2="73.66" width="0.1524" layer="91"/>
 <junction x="106.68" y="73.66"/>
 </segment>
+<segment>
+<pinref part="SUPPLY4" gate="G$1" pin="5V"/>
+<pinref part="U$3" gate="G$1" pin="1"/>
+<wire x1="12.7" y1="45.72" x2="12.7" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="43.18" x2="7.62" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="8"/>
+<wire x1="12.7" y1="43.18" x2="12.7" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="25.4" x2="7.62" y2="25.4" width="0.1524" layer="91"/>
+<junction x="12.7" y="43.18"/>
+</segment>
 </net>
 <net name="SDA" class="0">
-<segment>
-<wire x1="27.94" y1="78.74" x2="27.94" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="2"/>
-<wire x1="27.94" y1="73.66" x2="17.78" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="SUPPLY5" gate="SDA" pin="SDA"/>
-</segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="19"/>
 <wire x1="55.88" y1="73.66" x2="63.5" y2="73.66" width="0.1524" layer="91"/>
@@ -2297,25 +2308,27 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="63.5" y="73.66"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="2"/>
-<wire x1="17.78" y1="43.18" x2="27.94" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="43.18" x2="27.94" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="SUPPLY5" gate="SDA" pin="SDA"/>
+<wire x1="27.94" y1="81.28" x2="27.94" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="3"/>
+<wire x1="27.94" y1="71.12" x2="7.62" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="6"/>
+<wire x1="27.94" y1="71.12" x2="27.94" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="63.5" x2="7.62" y2="63.5" width="0.1524" layer="91"/>
+<junction x="27.94" y="71.12"/>
+</segment>
+<segment>
 <pinref part="SUPPLY7" gate="SDA" pin="SDA"/>
+<wire x1="27.94" y1="43.18" x2="27.94" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="3"/>
+<wire x1="27.94" y1="38.1" x2="7.62" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="6"/>
+<wire x1="27.94" y1="38.1" x2="27.94" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="30.48" x2="7.62" y2="30.48" width="0.1524" layer="91"/>
+<junction x="27.94" y="38.1"/>
 </segment>
 </net>
 <net name="SCL" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="3"/>
-<wire x1="17.78" y1="40.64" x2="33.02" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="40.64" x2="33.02" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="U$6" gate="SCL" pin="SCL"/>
-</segment>
-<segment>
-<pinref part="U$2" gate="G$1" pin="3"/>
-<wire x1="17.78" y1="71.12" x2="33.02" y2="71.12" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="71.12" x2="33.02" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="U$7" gate="SCL" pin="SCL"/>
-</segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="GPIO3"/>
 <pinref part="U$4" gate="G$1" pin="18"/>
@@ -2324,6 +2337,26 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="66.04" y1="91.44" x2="66.04" y2="71.12" width="0.1524" layer="91"/>
 <junction x="66.04" y="71.12"/>
 <pinref part="U$8" gate="SCL" pin="SCL"/>
+</segment>
+<segment>
+<pinref part="U$7" gate="SCL" pin="SCL"/>
+<pinref part="U$2" gate="G$1" pin="4"/>
+<wire x1="35.56" y1="81.28" x2="35.56" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="68.58" x2="7.62" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="5"/>
+<wire x1="35.56" y1="68.58" x2="35.56" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="66.04" x2="7.62" y2="66.04" width="0.1524" layer="91"/>
+<junction x="35.56" y="68.58"/>
+</segment>
+<segment>
+<pinref part="U$6" gate="SCL" pin="SCL"/>
+<pinref part="U$3" gate="G$1" pin="4"/>
+<wire x1="35.56" y1="43.18" x2="35.56" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="35.56" x2="7.62" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="5"/>
+<wire x1="35.56" y1="35.56" x2="35.56" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="33.02" x2="7.62" y2="33.02" width="0.1524" layer="91"/>
+<junction x="35.56" y="35.56"/>
 </segment>
 </net>
 </nets>
