@@ -20,6 +20,8 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "stm32f0xx_hal.h"
+
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -100,6 +102,50 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
+	if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0)==GPIO_PIN_SET){
+		//sensor1 detect
+		HAL_I2C_Slave_Transmit(&hi2c1, (uint8_t *) 0x01, 1 , 100);
+
+	}
+	if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_1)==GPIO_PIN_SET){
+		//sensor2 detect
+		HAL_I2C_Slave_Transmit(&hi2c1, (uint8_t *) 0x02, 1 , 100);
+	}
+	if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_2)==GPIO_PIN_SET){
+		//sensor3 detect
+		HAL_I2C_Slave_Transmit(&hi2c1, (uint8_t *) 0x03, 1 , 100);
+	}
+	if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_3)==GPIO_PIN_SET){
+		//sensor4 detect
+		HAL_I2C_Slave_Transmit(&hi2c1, (uint8_t *) 0x04, 1 , 100);
+	}
+	if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_4)==GPIO_PIN_SET){
+		//sensor5 detect
+		HAL_I2C_Slave_Transmit(&hi2c1, (uint8_t *) 0x05, 1 , 100);
+	}
+	if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_5)==GPIO_PIN_SET){
+		//sensor6 detect
+		HAL_I2C_Slave_Transmit(&hi2c1, (uint8_t *) 0x06, 1 , 100);
+	}
+	if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_6)==GPIO_PIN_SET){
+		//sensor7 detect
+		HAL_I2C_Slave_Transmit(&hi2c1, (uint8_t *) 0x07, 1 , 100);
+	}
+	if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_7)==GPIO_PIN_SET){
+		//sensor8 detect
+		HAL_I2C_Slave_Transmit(&hi2c1, (uint8_t *) 0x08, 1 , 100);
+	}
+	if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_8)==GPIO_PIN_SET){
+		//sensor9 detect
+		HAL_I2C_Slave_Transmit(&hi2c1, (uint8_t *) 0x09, 1 , 100);
+	}
+	if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_9)==GPIO_PIN_SET){
+		//sensor10 detect
+		HAL_I2C_Slave_Transmit(&hi2c1, (uint8_t *) 0x0A, 1 , 100);
+	}
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, false);
+
+	HAL_Delay(1000);
 
     /* USER CODE BEGIN 3 */
   }
@@ -163,7 +209,7 @@ static void MX_I2C1_Init(void)
   /* USER CODE END I2C1_Init 1 */
   hi2c1.Instance = I2C1;
   hi2c1.Init.Timing = 0x2000090E;
-  hi2c1.Init.OwnAddress1 = 0;
+  hi2c1.Init.OwnAddress1 = 0x01;
   hi2c1.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
   hi2c1.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
   hi2c1.Init.OwnAddress2 = 0;
@@ -199,9 +245,31 @@ static void MX_I2C1_Init(void)
   */
 static void MX_GPIO_Init(void)
 {
+  GPIO_InitTypeDef GPIO_InitStruct = {0};
 
   /* GPIO Ports Clock Enable */
+  __HAL_RCC_GPIOA_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0|GPIO_PIN_1|GPIO_PIN_2, GPIO_PIN_RESET);
+
+  /*Configure GPIO pins : PA0 PA1 PA2 PA3 
+                           PA4 PA5 PA6 PA7 
+                           PA8 PA9 */
+  GPIO_InitStruct.Pin = GPIO_PIN_0|GPIO_PIN_1|GPIO_PIN_2|GPIO_PIN_3 
+                          |GPIO_PIN_4|GPIO_PIN_5|GPIO_PIN_6|GPIO_PIN_7 
+                          |GPIO_PIN_8|GPIO_PIN_9;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : PB0 PB1 PB2 */
+  GPIO_InitStruct.Pin = GPIO_PIN_0|GPIO_PIN_1|GPIO_PIN_2;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
 }
 
