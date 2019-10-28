@@ -20459,6 +20459,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <sheet>
 <plain>
 <text x="165.1" y="7.62" size="2.54" layer="97">Jonas De Schoenmacker</text>
+<text x="109.22" y="167.64" size="5.08" layer="91">Referentie schema</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0">
