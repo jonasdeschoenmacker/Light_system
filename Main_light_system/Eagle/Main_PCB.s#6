@@ -828,8 +828,8 @@ Updated  by  Dan Xu 2014-07-08&lt;br&gt;
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="L2" library="Main_lib" deviceset="WE-PDF_1064" device="" package3d_urn="urn:adsk.eagle:package:7586394/5" technology="_7447798910" value="27µH"/>
 <part name="U2" library="Main_lib" deviceset="TPS54308DDCT" device=""/>
-<part name="RFBB1" library="Main_lib" deviceset="R-0805" device="" value="13,7kΩ"/>
-<part name="RFBT1" library="Main_lib" deviceset="R-0603" device="" value="100kΩ"/>
+<part name="RFBB1" library="Main_lib" deviceset="R-0805" device="" value="100kΩ"/>
+<part name="RFBT1" library="Main_lib" deviceset="R-0603" device="" value="13,7kΩ"/>
 <part name="COUT1" library="Main_lib" deviceset="ELCO_TYPE_C" device="" value="33µF"/>
 <part name="CIN1" library="Main_lib" deviceset="C-1210" device="" value="10µF"/>
 <part name="CBST1" library="Main_lib" deviceset="C-0603" device="" value="100nF"/>
