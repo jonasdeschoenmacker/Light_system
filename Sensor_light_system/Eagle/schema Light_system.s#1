@@ -9493,14 +9493,15 @@ Source: www.st.com, BAT60J.pdf</description>
 <segment>
 <pinref part="U$2" gate="G$1" pin="1"/>
 <pinref part="U$1" gate="G$1" pin="1"/>
-<wire x1="223.52" y1="111.76" x2="210.82" y2="111.76" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
+<wire x1="223.52" y1="111.76" x2="215.9" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="2"/>
 <pinref part="U$1" gate="G$1" pin="2"/>
-<wire x1="223.52" y1="109.22" x2="210.82" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="111.76" x2="210.82" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="109.22" x2="215.9" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="109.22" x2="210.82" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="111.76" x2="215.9" y2="109.22" width="0.1524" layer="91"/>
+<junction x="215.9" y="111.76"/>
+<junction x="215.9" y="109.22"/>
 </segment>
 </net>
 <net name="RST" class="0">

@@ -2788,6 +2788,9 @@ design rules under a new name.</description>
 <param name="cfChangeDir" value="25"/>
 </pass>
 </autorouter>
+<groups>
+<board_group name="GND"/>
+</groups>
 <elements>
 <element name="H1" library="holes" package="3,3-PAD" value="MOUNT-PAD-ROUND3.3" x="4.8" y="45.847" smashed="yes"/>
 <element name="H2" library="holes" package="3,3-PAD" value="MOUNT-PAD-ROUND3.3" x="55.2" y="45.2" smashed="yes"/>
@@ -2952,7 +2955,6 @@ design rules under a new name.</description>
 <wire x1="17.78" y1="25.42" x2="17.78" y2="24.13" width="0.3048" layer="1"/>
 <via x="41.91" y="22.86" extent="1-16" drill="0.35"/>
 <wire x1="41.91" y1="25.27" x2="41.91" y2="22.86" width="0.3048" layer="1"/>
-<wire x1="46.99" y1="25.27" x2="46.86" y2="25.27" width="0.3048" layer="1"/>
 <wire x1="41.91" y1="22.86" x2="42.164" y2="23.114" width="0.3048" layer="16"/>
 <wire x1="42.164" y1="23.114" x2="43.18" y2="23.114" width="0.3048" layer="16"/>
 <wire x1="47.89" y1="7.02" x2="47.59" y2="7.02" width="0.3048" layer="1"/>
@@ -2962,7 +2964,6 @@ design rules under a new name.</description>
 <wire x1="46.99" y1="8.89" x2="49.53" y2="11.43" width="0.3048" layer="1"/>
 <wire x1="49.53" y1="11.43" x2="49.53" y2="22.73" width="0.3048" layer="1"/>
 <wire x1="36.83" y1="25.27" x2="41.91" y2="25.27" width="0.3048" layer="1"/>
-<wire x1="41.91" y1="25.27" x2="46.99" y2="25.27" width="0.3048" layer="1"/>
 <via x="30.48" y="22.86" extent="1-16" drill="0.35"/>
 <wire x1="30.48" y1="22.86" x2="30.48" y2="23.114" width="0.3048" layer="16"/>
 <wire x1="30.48" y1="22.86" x2="28.782" y2="21.162" width="0.3048" layer="1"/>
@@ -2982,10 +2983,11 @@ design rules under a new name.</description>
 <wire x1="11.176" y1="23.114" x2="8.89" y2="23.114" width="0.1524" layer="16"/>
 <via x="13.97" y="30.48" extent="1-16" drill="0.35"/>
 <via x="16.51" y="33.02" extent="1-16" drill="0.35"/>
-<wire x1="16.51" y1="33.02" x2="18.92" y2="33.02" width="0.1524" layer="1"/>
-<wire x1="13.97" y1="30.48" x2="13.97" y2="27.94" width="0.1524" layer="1"/>
+<wire x1="16.51" y1="33.02" x2="18.92" y2="33.02" width="0.3048" layer="1"/>
+<wire x1="13.97" y1="30.48" x2="13.97" y2="27.94" width="0.3048" layer="1"/>
 <wire x1="13.97" y1="27.94" x2="13.95" y2="27.92" width="0.1524" layer="1"/>
-<wire x1="13.97" y1="30.48" x2="16.51" y2="33.02" width="0.1524" layer="16"/>
+<wire x1="13.97" y1="30.48" x2="16.51" y2="33.02" width="0.3048" layer="16"/>
+<wire x1="41.91" y1="25.27" x2="46.99" y2="25.27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND">
 <contactref element="IC1" pad="23"/>
@@ -3024,25 +3026,20 @@ design rules under a new name.</description>
 <wire x1="21.88" y1="32.86" x2="21.72" y2="33.02" width="0.1524" layer="1"/>
 <wire x1="15.24" y1="25.53" x2="16.38" y2="26.67" width="0.3048" layer="1"/>
 <wire x1="16.38" y1="26.67" x2="17.78" y2="26.67" width="0.3048" layer="1"/>
-<wire x1="18.8497" y1="24.87375" x2="19.02825" y2="24.6952" width="0.3048" layer="1"/>
-<wire x1="19.02825" y1="24.6952" x2="19.8468" y2="24.6952" width="0.3048" layer="1"/>
-<wire x1="19.8468" y1="24.6952" x2="19.892" y2="24.65" width="0.3048" layer="1"/>
 <wire x1="17.78" y1="26.67" x2="18.8497" y2="25.6003" width="0.3048" layer="1"/>
-<wire x1="18.8497" y1="25.6003" x2="18.8497" y2="24.87375" width="0.3048" layer="1"/>
+<wire x1="18.8497" y1="25.6003" x2="18.8497" y2="25.4" width="0.3048" layer="1"/>
 <via x="41.91" y="30.48" extent="1-16" drill="0.35"/>
+<wire x1="18.8497" y1="25.4" x2="18.8497" y2="24.87375" width="0.3048" layer="1"/>
 <wire x1="41.91" y1="28.07" x2="41.91" y2="30.48" width="0.3048" layer="1"/>
 <wire x1="41.91" y1="28.81" x2="41.91" y2="30.48" width="0.3048" layer="16"/>
 <wire x1="36.83" y1="28.07" x2="41.91" y2="28.07" width="0.3048" layer="1"/>
 <wire x1="41.91" y1="28.07" x2="46.99" y2="28.07" width="0.3048" layer="1"/>
-<wire x1="19.892" y1="24.65" x2="19.9372" y2="24.6952" width="0.3048" layer="1"/>
-<wire x1="19.9372" y1="24.6952" x2="23.15" y2="24.6952" width="0.3048" layer="1"/>
 <wire x1="23.15" y1="27.098" x2="21.88" y2="28.368" width="0.3048" layer="1"/>
 <wire x1="21.88" y1="28.368" x2="21.88" y2="29.638" width="0.3048" layer="1"/>
 <wire x1="23.15" y1="27.098" x2="23.15" y2="24.6952" width="0.3048" layer="1"/>
 <wire x1="26.38" y1="21.162" x2="26.3348" y2="21.2072" width="0.3048" layer="1"/>
 <wire x1="26.3348" y1="21.2072" x2="26.3348" y2="22.02575" width="0.3048" layer="1"/>
-<wire x1="26.3348" y1="22.02575" x2="23.71055" y2="24.65" width="0.3048" layer="1"/>
-<wire x1="23.71055" y1="24.65" x2="19.892" y2="24.65" width="0.3048" layer="1"/>
+<wire x1="23.71055" y1="24.65" x2="26.3348" y2="22.02575" width="0.3048" layer="1"/>
 <via x="11.43" y="40.64" extent="1-16" drill="1"/>
 <wire x1="11.43" y1="40.64" x2="11.43" y2="38.23" width="1.016" layer="1"/>
 <wire x1="11.43" y1="40.64" x2="11.43" y2="28.81" width="1.016" layer="16"/>
@@ -3058,25 +3055,44 @@ design rules under a new name.</description>
 <via x="24.13" y="33.02" extent="1-16" drill="1"/>
 <wire x1="21.72" y1="33.02" x2="24.13" y2="33.02" width="1.016" layer="1"/>
 <wire x1="24.13" y1="33.02" x2="24.13" y2="28.81" width="1.016" layer="16"/>
+<polygon width="0.1524" layer="16">
+<vertex x="1.27" y="49.53"/>
+<vertex x="59.69" y="49.53"/>
+<vertex x="59.69" y="27.94"/>
+<vertex x="1.27" y="27.94"/>
+</polygon>
+<wire x1="19.07345" y1="24.65" x2="19.892" y2="24.65" width="0.3048" layer="1"/>
+<wire x1="18.8497" y1="24.87375" x2="19.07345" y2="24.65" width="0.3048" layer="1"/>
+<wire x1="23.15" y1="24.6952" x2="23.1048" y2="24.65" width="0.3048" layer="1"/>
+<wire x1="23.15" y1="24.6952" x2="23.1952" y2="24.65" width="0.3048" layer="1"/>
+<wire x1="23.1952" y1="24.65" x2="23.71055" y2="24.65" width="0.3048" layer="1"/>
+<wire x1="23.1048" y1="24.65" x2="19.892" y2="24.65" width="0.3048" layer="1"/>
+<polygon width="0.3048" layer="1">
+<vertex x="1.27" y="49.53"/>
+<vertex x="59.69" y="49.53"/>
+<vertex x="59.69" y="19.05"/>
+<vertex x="16.51" y="19.05"/>
+<vertex x="16.51" y="1.27"/>
+<vertex x="1.27" y="1.27"/>
+</polygon>
 </signal>
 <signal name="PA0">
 <contactref element="IC1" pad="10"/>
 <contactref element="J1" pad="3"/>
-<wire x1="17.88525" y1="23.6048" x2="19.8468" y2="23.6048" width="0.3048" layer="1"/>
-<wire x1="19.8468" y1="23.6048" x2="19.892" y2="23.65" width="0.3048" layer="1"/>
-<wire x1="16.811" y1="22.53055" x2="16.811" y2="7.239" width="0.3048" layer="1"/>
+<wire x1="16.811" y1="7.239" x2="16.811" y2="22.53055" width="0.3048" layer="1"/>
 <wire x1="17.7" y1="6.35" x2="16.811" y2="7.239" width="0.3048" layer="1"/>
-<wire x1="17.88525" y1="23.6048" x2="16.811" y2="22.53055" width="0.3048" layer="1"/>
+<wire x1="16.811" y1="22.53055" x2="17.93045" y2="23.65" width="0.3048" layer="1"/>
+<wire x1="17.93045" y1="23.65" x2="19.892" y2="23.65" width="0.3048" layer="1"/>
 </signal>
 <signal name="PA1">
 <contactref element="IC1" pad="11"/>
 <contactref element="J1" pad="4"/>
 <wire x1="20.2" y1="11.35" x2="17.653" y2="13.897" width="0.3048" layer="1"/>
-<wire x1="17.653" y1="13.897" x2="17.653" y2="21.971" width="0.3048" layer="1"/>
+<wire x1="17.653" y1="13.897" x2="17.653" y2="21.59" width="0.3048" layer="1"/>
+<wire x1="18.8296" y1="23.1476" x2="19.8896" y2="23.1476" width="0.3048" layer="1"/>
+<wire x1="19.8896" y1="23.1476" x2="19.892" y2="23.15" width="0.3048" layer="1"/>
+<wire x1="17.653" y1="21.59" x2="17.653" y2="21.971" width="0.3048" layer="1"/>
 <wire x1="17.653" y1="21.971" x2="18.8296" y2="23.1476" width="0.3048" layer="1"/>
-<wire x1="18.8296" y1="23.1476" x2="19.892" y2="23.1476" width="0.3048" layer="1"/>
-<wire x1="19.892" y1="23.15" x2="18.832" y2="23.15" width="0.3048" layer="1"/>
-<wire x1="18.832" y1="23.15" x2="18.8296" y2="23.1476" width="0.3048" layer="1"/>
 </signal>
 <signal name="PA2">
 <contactref element="IC1" pad="12"/>
@@ -3315,6 +3331,11 @@ will not be understood (or retained) with this version.
 Since Version 8.3, EAGLE supports the association of 3D packages
 with devices in libraries, schematics, and board files. Those 3D
 packages will not be understood (or retained) with this version.
+</note>
+<note version="9.5" severity="warning">
+Since Version 9.5, EAGLE supports persistent groups with
+schematics, and board files. Those persistent groups
+will not be understood (or retained) with this version.
 </note>
 </compatibility>
 </eagle>

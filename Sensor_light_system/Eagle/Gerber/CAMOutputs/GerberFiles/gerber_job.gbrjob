@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2019-11-18T09:38:47Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.2.0"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "schema Light_system"
+        },
+        "Owner": "Jonas De Schoenmacker <jonas.deschoenmacker@student.odisee.be>",
+        "Size": {
+            "X": 60,
+            "Y": 50
+        }
+    }
+}

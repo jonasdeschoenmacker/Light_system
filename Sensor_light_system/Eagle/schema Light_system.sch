@@ -8945,9 +8945,9 @@ Source: www.st.com, BAT60J.pdf</description>
 <part name="C5" library="resistor" deviceset="C-EU" device="C1206" value="100nF"/>
 <part name="C6" library="resistor" deviceset="C-EU" device="C1206" value="100nF"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="U$1" library="Main_lib" deviceset="MODULARCONNECTOR" device=""/>
-<part name="U$2" library="Main_lib" deviceset="MODULARCONNECTOR" device=""/>
-<part name="U$3" library="Main_lib" deviceset="MODULARCONNECTOR" device=""/>
+<part name="U$1" library="Main_lib" deviceset="MODULARCONNECTOR" device="" value="I2C_out"/>
+<part name="U$2" library="Main_lib" deviceset="MODULARCONNECTOR" device="" value="I2C_in"/>
+<part name="U$3" library="Main_lib" deviceset="MODULARCONNECTOR" device="" value="Program"/>
 <part name="+3V7" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="+3V8" library="supply1" deviceset="+3V3" device=""/>
@@ -9556,25 +9556,28 @@ Source: www.st.com, BAT60J.pdf</description>
 <label x="152.4" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="N$3" class="0">
+<segment>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="127" y1="63.5" x2="127" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="127" y1="68.58" x2="132.08" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="PB2"/>
+<wire x1="132.08" y1="68.58" x2="132.08" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PB1"/>
-<wire x1="129.54" y1="71.12" x2="129.54" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="129.54" y1="71.12" x2="129.54" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="PB2"/>
-<wire x1="132.08" y1="71.12" x2="132.08" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="N$9" class="0">
+<net name="N$7" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="PB0"/>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="127" y1="63.5" x2="127" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="127" y1="71.12" x2="132.08" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="132.08" y1="66.04" x2="132.08" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
