@@ -181,8 +181,6 @@
                     },
                     "filename_format": "%PREFIX/silkscreen_bottom.gbr",
                     "layers": [
-                        22,
-                        26
                     ],
                     "milling": false,
                     "name": "Silkscreen Bottom",
@@ -199,7 +197,7 @@
             ]
         }
     ],
-    "timestamp": "2019-11-18T11:56:19",
+    "timestamp": "2019-11-18T12:32:17",
     "type": "EAGLE CAM job",
     "units": "metric",
     "version": "9.2.0"
