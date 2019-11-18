@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2019-11-18T09:40:21Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.5.1"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.586,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "Main_PCB"
+        },
+        "Owner": "Basile Berckmoes <basile.berckmoes@student.odisee.be>",
+        "Size": {
+            "X": 104,
+            "Y": 50
+        }
+    }
+}

@@ -3,7 +3,7 @@
 <eagle version="9.5.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -619,9 +619,9 @@
 <pad name="40" x="24.13" y="1.27" drill="0.9144" shape="octagon"/>
 <pad name="39" x="24.13" y="-1.27" drill="0.9144" shape="octagon"/>
 <text x="-25.32" y="-8.571" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-27.511" y="1.429" size="1.27" layer="21" ratio="10">1</text>
+<text x="-27.511" y="-2.381" size="1.27" layer="21" ratio="10">1</text>
 <text x="-25.4" y="-4.699" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="23.241" y="-4.699" size="1.27" layer="21" ratio="10">40</text>
+<text x="26.67" y="0.889" size="1.27" layer="21" ratio="10">40</text>
 <wire x1="-32.5" y1="3.5" x2="32.5" y2="3.5" width="0.127" layer="21"/>
 <wire x1="32.5" y1="3.5" x2="32.5" y2="-26.5" width="0.127" layer="21"/>
 <wire x1="32.5" y1="-26.5" x2="-32.5" y2="-26.5" width="0.127" layer="21"/>
@@ -631,7 +631,7 @@
 <wire x1="26" y1="-2.5" x2="26" y2="2.5" width="0.127" layer="21"/>
 <wire x1="26" y1="2.5" x2="-26" y2="2.5" width="0.127" layer="21"/>
 </package>
-<package name="MA04-2" urn="urn:adsk.eagle:footprint:8328/1">
+<package name="MA04-2" urn="urn:adsk.eagle:footprint:8328/1" locally_modified="yes">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <wire x1="-4.445" y1="2.54" x2="-3.175" y2="2.54" width="0.1524" layer="21"/>
 <wire x1="-3.175" y1="2.54" x2="-2.54" y2="1.905" width="0.1524" layer="21"/>
@@ -667,10 +667,10 @@
 <pad name="4" x="-1.27" y="1.27" drill="1.016" shape="octagon"/>
 <pad name="6" x="1.27" y="1.27" drill="1.016" shape="octagon"/>
 <pad name="8" x="3.81" y="1.27" drill="1.016" shape="octagon"/>
-<text x="-4.318" y="-4.191" size="1.27" layer="21" ratio="10">1</text>
+<text x="-6.35" y="-2.032" size="1.27" layer="21" ratio="10">1</text>
 <text x="-5.08" y="2.921" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="0" y="-4.191" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="3.81" y="2.921" size="1.27" layer="21" ratio="10">8</text>
+<text x="5.969" y="1.016" size="1.27" layer="21" ratio="10">8</text>
 <rectangle x1="-1.524" y1="-1.524" x2="-1.016" y2="-1.016" layer="51"/>
 <rectangle x1="-4.064" y1="-1.524" x2="-3.556" y2="-1.016" layer="51"/>
 <rectangle x1="1.016" y1="-1.524" x2="1.524" y2="-1.016" layer="51"/>
@@ -680,7 +680,7 @@
 <rectangle x1="1.016" y1="1.016" x2="1.524" y2="1.524" layer="51"/>
 <rectangle x1="3.556" y1="1.016" x2="4.064" y2="1.524" layer="51"/>
 </package>
-<package name="FE20" urn="urn:adsk.eagle:footprint:8147/1">
+<package name="FE20" urn="urn:adsk.eagle:footprint:8147/1" locally_modified="yes">
 <description>&lt;b&gt;FEMALE HEADER&lt;/b&gt;</description>
 <wire x1="-25.4" y1="1.27" x2="-25.4" y2="-1.27" width="0.1524" layer="21"/>
 <wire x1="-25.4" y1="-1.27" x2="-23.114" y2="-1.27" width="0.1524" layer="21"/>
@@ -1061,9 +1061,7 @@
 <pad name="19" x="21.59" y="0" drill="0.8128" shape="long" rot="R90"/>
 <pad name="20" x="24.13" y="0" drill="0.8128" shape="long" rot="R90"/>
 <text x="-21.59" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-24.638" y="1.524" size="1.27" layer="21" ratio="10">1</text>
 <text x="-25.4" y="-2.921" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="22.987" y="1.524" size="1.27" layer="21" ratio="10">20</text>
 <rectangle x1="-24.257" y1="0.254" x2="-24.003" y2="0.762" layer="51"/>
 <rectangle x1="-24.257" y1="-0.762" x2="-24.003" y2="-0.254" layer="51"/>
 <rectangle x1="-21.717" y1="0.254" x2="-21.463" y2="0.762" layer="51"/>
@@ -1929,7 +1927,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="CIN2" library="Main_lib" deviceset="C-1210" device="" value="10µF"/>
 <part name="CBST2" library="Main_lib" deviceset="C-0603" device="" value="100nF"/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="+3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device="" value="3.3V"/>
+<part name="3.3V1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device="" value="3.3V"/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -1947,13 +1945,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$1" library="Main_lib" deviceset="BERRY_PI_ZERO_W" device=""/>
-<part name="U$2" library="Main_lib" deviceset="MODULARCONNECTOR" device="" value="LinkerVrouwtje"/>
-<part name="U$3" library="Main_lib" deviceset="MODULARCONNECTOR" device="" value="RechterMannetje"/>
+<part name="U$2" library="Main_lib" deviceset="MODULARCONNECTOR" device="" value="Female"/>
+<part name="U$3" library="Main_lib" deviceset="MODULARCONNECTOR" device="" value="MALE"/>
 <part name="SUPPLY2" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
 <part name="GND9" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="GND10" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
-<part name="U$4" library="Main_lib" deviceset="PARALLELHEADER" device=""/>
-<part name="U$5" library="Main_lib" deviceset="PARALLELHEADER" device=""/>
+<part name="U$4" library="Main_lib" deviceset="PARALLELHEADER" device="" value="ODD PINS"/>
+<part name="U$5" library="Main_lib" deviceset="PARALLELHEADER" device="" value="EVEN PINS"/>
 <part name="SUPPLY3" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
 <part name="GND12" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="SUPPLY5" library="Main_lib" deviceset="SDA" device=""/>
@@ -1961,7 +1959,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U$7" library="Main_lib" deviceset="SCL" device=""/>
 <part name="U$8" library="Main_lib" deviceset="SCL" device=""/>
 <part name="SUPPLY8" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
-<part name="J1" library="Main_lib" deviceset="PUSH_TERMINAL_2WAYS" device=""/>
+<part name="J1" library="Main_lib" deviceset="PUSH_TERMINAL_2WAYS" device="" value="Vin"/>
 <part name="GND13" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="SUPPLY9" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="5V" device=""/>
@@ -2582,7 +2580,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="GND1" gate="1" x="109.22" y="10.16" smashed="yes">
 <attribute name="VALUE" x="106.68" y="7.62" size="1.778" layer="96"/>
 </instance>
-<instance part="+3V1" gate="G$1" x="144.78" y="43.18" smashed="yes" rot="R270">
+<instance part="3.3V1" gate="G$1" x="144.78" y="43.18" smashed="yes" rot="R270">
 <attribute name="VALUE" x="139.7" y="45.72" size="1.778" layer="96"/>
 </instance>
 <instance part="P+1" gate="1" x="-2.54" y="48.26" smashed="yes" rot="R90">
@@ -2677,7 +2675,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="109.22" y="43.18"/>
 <pinref part="COUT2" gate="A" pin="+"/>
 <wire x1="127" y1="43.18" x2="127" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="+3V1" gate="G$1" pin="+3V3"/>
+<pinref part="3.3V1" gate="G$1" pin="+3V3"/>
 <wire x1="127" y1="43.18" x2="142.24" y2="43.18" width="0.1524" layer="91"/>
 <junction x="127" y="43.18"/>
 <label x="119.38" y="45.72" size="1.778" layer="95"/>
@@ -2686,6 +2684,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="201,1,104.14,73.66,5V,5V\, 5V@2,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
