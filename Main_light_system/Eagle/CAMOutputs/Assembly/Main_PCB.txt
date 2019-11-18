@@ -1,4 +1,4 @@
-Partlist exported from /Users/basileberckmoes/GitHub/Light_system/Main_light_system/Eagle/Main_PCB.sch at 18/11/2019 10:40
+Partlist exported from /Users/basileberckmoes/GitHub/Light_system/Main_light_system/Eagle/Main_PCB.sch at 18/11/2019 10:51
 
 Qty Value           Device                 Package     Parts        Description                                                                                                   DESCRIPTION                                                                                                   HEIGHT MANUFACTURER_NAME MANUFACTURER_PART_NUMBER MOUSER_PART_NUMBER MOUSER_PRICE-STOCK                                            VENDOR            WE-NUMBER       
 2   100kΩ           R-0805                 R0805       RFBT1, RFBT2                                                                                                                                                                                                                                                                                                                                                                                                  
