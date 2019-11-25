@@ -1,0 +1,19 @@
+Partlist exported from C:/Users/nielv/Documents/EAGLE/projects/LAMPEN/Lampen.sch at 18/11/2019 12:32
+
+Qty Value            Device           Package Parts                                       Description                                    MF                      MPN       OC_FARNELL OC_NEWARK POPULARITY SPICEPREFIX
+1                    B250C1500G       RB1A    B1                                          RECTIFIER                                                                                             12                    
+1   10kΩ             R-EU_M1206       M1206   R3                                          RESISTOR, European symbol                                                                                        R          
+1   1kΩ              R-EU_M1206       M1206   R1                                          RESISTOR, European symbol                                                                                        R          
+1   230VAC           1751248          1751248 X2                                          MKDS 1/ 2-3,5 Printklemme                                                                                                   
+10  330Ω             R-EU_M1206       M1206   R4, R6, R7, R8, R9, R10, R11, R12, R13, R14 RESISTOR, European symbol                                                                                        R          
+2   47kΩ             R-EU_R2512       R2512   R2, R5                                      RESISTOR, European symbol                                                                                        R          
+5   BT136            BT136            TO220DS T1, T2, T3, T4, T5                          TRIAC                                                                                                 0                     
+1   Lamp0            1751248          1751248 X1                                          MKDS 1/ 2-3,5 Printklemme                                                                                                   
+1   Lamp1            1751248          1751248 X4                                          MKDS 1/ 2-3,5 Printklemme                                                                                                   
+1   Lamp2            1751248          1751248 X5                                          MKDS 1/ 2-3,5 Printklemme                                                                                                   
+1   Lamp3            1751248          1751248 X6                                          MKDS 1/ 2-3,5 Printklemme                                                                                                   
+1   Lamp4            1751248          1751248 X3                                          MKDS 1/ 2-3,5 Printklemme                                                                                                   
+1   MCT2EM           MCT2EM21         DIL06   OK2                                         RANDOM-PHASE OPTOISOLATORS TRIAC DRIVER OUTPUT FAIRCHILD SEMICONDUCTOR MOC3021-M 1021365    95B7895   0                     
+5   MOC3021M         MOC3021M10       DIL06   OK1, OK3, OK4, OK5, OK6                     RANDOM-PHASE OPTOISOLATORS TRIAC DRIVER OUTPUT FAIRCHILD SEMICONDUCTOR MOC3010-M 1505423    72K8892   0                     
+2   MODULARCONNECTOR MODULARCONNECTOR MA04-2  U$2, U$3                                                                                                                                                                
+1   NANO             NANO             NANO    U$1                                         Arduino Nano                                                                                                                
