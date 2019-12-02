@@ -102,51 +102,74 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0)==GPIO_PIN_SET){
-		//sensor1 detect
-		HAL_I2C_Slave_Transmit(&hi2c1, (uint8_t *) 0x01, 1 , 100);
+	if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0)==GPIO_PIN_SET){ 		//sensor1 detect
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2, false); 			//rode led uitzetten
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, true); 			//blauwe led aanzetten
 
+		HAL_I2C_Slave_Transmit(&hi2c1, (uint8_t *) 0x01, 1 , 100);
 	}
-	if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_1)==GPIO_PIN_SET){
-		//sensor2 detect
+	if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_1)==GPIO_PIN_SET){ 		//sensor2 detect
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2, false); 			//rode led uitzetten
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, true); 			//blauwe led aanzetten
+
 		HAL_I2C_Slave_Transmit(&hi2c1, (uint8_t *) 0x02, 1 , 100);
 	}
-	if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_2)==GPIO_PIN_SET){
-		//sensor3 detect
+	if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_2)==GPIO_PIN_SET){ 		//sensor3 detect
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2, false); 			//rode led uitzetten
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, true); 			//blauwe led aanzetten
+
 		HAL_I2C_Slave_Transmit(&hi2c1, (uint8_t *) 0x03, 1 , 100);
 	}
-	if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_3)==GPIO_PIN_SET){
-		//sensor4 detect
+	if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_3)==GPIO_PIN_SET){ 		//sensor4 detect
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2, false); 			//rode led uitzetten
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, true); 			//blauwe led aanzetten
+
 		HAL_I2C_Slave_Transmit(&hi2c1, (uint8_t *) 0x04, 1 , 100);
 	}
-	if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_4)==GPIO_PIN_SET){
-		//sensor5 detect
+	if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_4)==GPIO_PIN_SET){ 		//sensor5 detect
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2, false); 			//rode led uitzetten
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, true); 			//blauwe led aanzetten
+
 		HAL_I2C_Slave_Transmit(&hi2c1, (uint8_t *) 0x05, 1 , 100);
 	}
-	if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_5)==GPIO_PIN_SET){
-		//sensor6 detect
+	if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_5)==GPIO_PIN_SET){ 		//sensor6 detect
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2, false); 			//rode led uitzetten
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, true); 			//blauwe led aanzetten
+
 		HAL_I2C_Slave_Transmit(&hi2c1, (uint8_t *) 0x06, 1 , 100);
 	}
-	if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_6)==GPIO_PIN_SET){
-		//sensor7 detect
+	if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_6)==GPIO_PIN_SET){ 		//sensor7 detect
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2, false); 			//rode led uitzetten
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, true); 			//blauwe led aanzetten
+
 		HAL_I2C_Slave_Transmit(&hi2c1, (uint8_t *) 0x07, 1 , 100);
 	}
-	if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_7)==GPIO_PIN_SET){
-		//sensor8 detect
+	if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_7)==GPIO_PIN_SET){ 		//sensor8 detect
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2, false); 			//rode led uitzetten
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, true); 			//blauwe led aanzetten
+
 		HAL_I2C_Slave_Transmit(&hi2c1, (uint8_t *) 0x08, 1 , 100);
 	}
-	if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_8)==GPIO_PIN_SET){
-		//sensor9 detect
+	if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_8)==GPIO_PIN_SET){ 		//sensor9 detect
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2, false); 			//rode led uitzetten
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, true); 			//blauwe led aanzetten
+
 		HAL_I2C_Slave_Transmit(&hi2c1, (uint8_t *) 0x09, 1 , 100);
 	}
-	if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_9)==GPIO_PIN_SET){
-		//sensor10 detect
+	if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_9)==GPIO_PIN_SET){ 		//sensor10 detect
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2, false); 			//rode led uitzetten
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, true); 			//blauwe led aanzetten
+
 		HAL_I2C_Slave_Transmit(&hi2c1, (uint8_t *) 0x0A, 1 , 100);
 	}
-	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, false);
+
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, false); 				//blauwe led uitzetten
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, true); 				//groene led aanzetten
 
 	HAL_Delay(1000);
 
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, false); 				//groene led uitzetten
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2, true); 				//rode led aanzetten
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
