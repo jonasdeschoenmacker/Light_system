@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2019-11-25T17:39:30Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.2.0"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "Lampen"
+        },
+        "Owner": "Ewout Cornette <ewout.cornette@student.odisee.be>",
+        "Size": {
+            "X": 99.98,
+            "Y": 49.87
+        }
+    }
+}

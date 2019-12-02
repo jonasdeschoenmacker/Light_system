@@ -1,8 +1,8 @@
 Main (Hoofdmodule): 0xFF;
 
 Sensor boards: subnetmask: 0x00
-	-> sensor1 = 0x01
-	-> sensor2 = 0x02
+	-> sensor1 = 0x01 off, 0xF1 on
+	-> sensor2 = 0x02 off, 0xF2 on
 
 Output boards: subnetmask: 0x80
 	-> output1 = 0x81
