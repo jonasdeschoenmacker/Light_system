@@ -23,7 +23,15 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#define true  1
+#define false 0
 
+#define init  0
+#define sending 1
+#define sended  2
+#define running 3
+
+int status;
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -105,12 +113,57 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
-  {
-    /* USER CODE END WHILE */
+    {
+      /* USER CODE END WHILE */
+  	  status=init;
+  	  while(status==init){
+  		  updateLED();
+  		  if(HAL_I2C_IsDeviceReady(&hi2c1, 0xFF, 10, 100)==HAL_OK){
+  			  HAL_TIM_Base_Start(&htim6);
+  			  status=running;
+  		  }
 
-    /* USER CODE BEGIN 3 */
-  }
+  		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, true); 				//blauwe led uitzetten
+  		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, false); 				//groene led uitzetten
+  		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2, false); 				//rode led uitzetten
+  		HAL_Delay(100);
+  	  }
+
+
+
+  	HAL_Delay(1000);
+  	status=running;
+  	updateLED();
+
+      /* USER CODE BEGIN 3 */
+    }
   /* USER CODE END 3 */
+}
+
+void updateLED(void){
+
+	switch(status){
+	case init:
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, true); 				//blauwe led aanzetten
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, false); 				//groene led uitzetten
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2, false); 				//rode led uitzetten
+		break;
+	case sending:
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, false); 				//blauwe led uitzetten
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, false); 				//groene led uitzetten
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2, true); 				//rode led aanzetten
+		break;
+	case sended:
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, false); 				//blauwe led uitzetten
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, true); 				//groene led aanzetten
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2, true); 				//rode led aanzetten
+		break;
+	case running:
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, false); 				//blauwe led uitzetten
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, true); 				//groene led aanzetten
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2, false); 				//rode led uitzetten
+		break;
+	}
 }
 
 /**
