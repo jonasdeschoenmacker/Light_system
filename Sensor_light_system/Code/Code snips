@@ -1,0 +1,23 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
+	if(htim->Instance==TIM6){
+		  if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0)!=GPIO_PIN_SET){
+			  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, 0);
+		  }else{
+			  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, 1);
+		  }
+	}
+}
