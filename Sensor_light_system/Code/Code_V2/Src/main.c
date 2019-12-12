@@ -146,19 +146,19 @@ void updateLED(void){
 
 	switch(status){
 	case init:
-		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, true); 				//blauwe led uitzetten
-		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, false); 				//groene led aanzetten
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, true); 				//blauwe led aanzetten
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, false); 				//groene led uitzetten
 		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2, false); 				//rode led uitzetten
 		break;
 	case sending:
 		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, false); 				//blauwe led uitzetten
-		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, false); 				//groene led aanzetten
-		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2, true); 				//rode led uitzetten
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, false); 				//groene led uitzetten
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2, true); 				//rode led aanzetten
 		break;
 	case sended:
 		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, false); 				//blauwe led uitzetten
 		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, true); 				//groene led aanzetten
-		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2, true); 				//rode led uitzetten
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2, true); 				//rode led aanzetten
 		break;
 	case running:
 		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, false); 				//blauwe led uitzetten
