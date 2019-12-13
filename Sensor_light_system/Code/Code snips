@@ -25,11 +25,17 @@ int main(void)
   MX_GPIO_Init();
   MX_I2C1_Init();
   MX_TIM6_Init();
-  /* USER CODE BEGIN 2 */
-  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, 1);
-  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, 1);
-  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2, 1);
-  HAL_TIM_Base_Start_IT(&htim6);
+  while(status==0){
+	  updateLED();
+	  /* USER CODE BEGIN 2 */
+	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, 1);
+	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, 1);
+	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2, 1);
+	  HAL_TIM_Base_Start_IT(&htim6);
+	  status=1;
+	  updateLED();
+  }
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -37,7 +43,10 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
+	  updateLED();
+	  HAL_I2C_Slave_Transmit(&hi2c1, (uint8_t *) 1, 1 , 100);
 
+	  HAL_Delay(100);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -47,20 +56,48 @@ int main(void)
 
 
 
+void updateLED(void){
+
+	switch(status){
+	case 0:
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, 0); 				//blauwe led aanzetten
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, 1); 				//groene led uitzetten
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2, 1); 				//rode led uitzetten
+		break;
+	case 1:
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, 1); 				//blauwe led uitzetten
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, 0); 				//groene led aanzetten
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2, 1); 				//rode led uitzetten
+		break;
+	case 2:
+		//HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, 1); 				//blauwe led uitzetten
+		//HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, 1); 				//groene led uitzetten
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2, 0); 				//rode led aanzetten
+		break;
+	/*case running:
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, false); 				//blauwe led uitzetten
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, true); 				//groene led aanzetten
+		HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2, false); 				//rode led uitzetten
+		break;*/
+	}
 
 
-
+}
 
 
 
 
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
+	status=2; //running timer callback
+	updateLED();
+
 	if(htim->Instance==TIM6){
 		  if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0)!=GPIO_PIN_SET){
-			  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, 0);
+			  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, 0);
 		  }else{
-			  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, 1);
+			  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, 1);
 		  }
 	}
+	status = 1;
 }
