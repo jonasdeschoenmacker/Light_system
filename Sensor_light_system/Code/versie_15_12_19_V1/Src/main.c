@@ -46,15 +46,15 @@ I2C_HandleTypeDef hi2c1;
 
 TIM_HandleTypeDef htim6;
 int status = 0;
-// emulated I2C „memory“
-static uint8_t ram[11];
-
-uint8_t i = 0;
 /*
  * status=0 //bootup
  * status=1 //running main
  * status=2 //running timer callback
  */
+// emulated I2C „memory“
+static uint8_t ram[11];
+
+uint8_t i = 0;
 /* USER CODE BEGIN PV */
 
 /* USER CODE END PV */
@@ -131,19 +131,20 @@ int main(void)
   MX_I2C1_Init();
   MX_TIM6_Init();
   //while(status==0){
-	  updateLED();
+	  //updateLED();
 	  /* USER CODE BEGIN 2 */
 	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, 1);
 	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, 1);
 	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_2, 1);
 	  HAL_TIM_Base_Start_IT(&htim6);
 	  HAL_I2C_Init(&hi2c1);
-	  status=1;
-	  //updateLED();
+
 	  ram[0]= 0xFF;
 	  for (int i = 1; i < 11; i++) {
-		  ram[i]= i+0xF0;
+		  ram[i]= i;
 	}
+	  status=1;
+	  //updateLED();
 
   //}
 
@@ -319,57 +320,58 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 				ram[i]= 0x0i;
 			}
 		}*/
-		  if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0)!=GPIO_PIN_SET){
-			  //HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, 0);
-			  ram[0]= 0xF0;
-		  }else{
-			  //HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, 1);
-			  ram[0]= 0x00;
-		  }
-		  if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_1)!=GPIO_PIN_SET){
+
+		  if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0)==GPIO_PIN_SET){
 			  ram[1]= 0xF1;
 		  }else{
 			  ram[1]= 0x01;
 		  }
-		  if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_2)!=GPIO_PIN_SET){
+		  if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_1)==GPIO_PIN_SET){
 			  ram[2]= 0xF2;
 		  }else{
 			  ram[2]= 0x02;
 		  }
-		  if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_3)!=GPIO_PIN_SET){
+		  if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_2)==GPIO_PIN_SET){
 			  ram[3]= 0xF3;
 		  }else{
 			  ram[3]= 0x03;
 		  }
-		  if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_4)!=GPIO_PIN_SET){
+		  if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_3)==GPIO_PIN_SET){
 			  ram[4]= 0xF4;
 		  }else{
 			  ram[4]= 0x04;
 		  }
-		  if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_5)!=GPIO_PIN_SET){
+		  if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_4)==GPIO_PIN_SET){
 			  ram[5]= 0xF5;
 		  }else{
 			  ram[5]= 0x05;
 		  }
-		  if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_6)!=GPIO_PIN_SET){
+		  if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_5)==GPIO_PIN_SET){
 			  ram[6]= 0xF6;
 		  }else{
 			  ram[6]= 0x06;
 		  }
-		  if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_7)!=GPIO_PIN_SET){
+		  if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_6)==GPIO_PIN_SET){
 			  ram[7]= 0xF7;
 		  }else{
 			  ram[7]= 0x07;
 		  }
-		  if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_8)!=GPIO_PIN_SET){
+		  if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_7)==GPIO_PIN_SET){
 			  ram[8]= 0xF8;
 		  }else{
 			  ram[8]= 0x08;
 		  }
-		  if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_9)!=GPIO_PIN_SET){
+		  if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_8)==GPIO_PIN_SET){
 			  ram[9]= 0xF9;
 		  }else{
 			  ram[9]= 0x09;
+		  }
+		  if(HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_9)==GPIO_PIN_SET){
+			  //HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, 0);
+			  ram[10]= 0xFA;
+		  }else{
+			  //HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, 1);
+			  ram[10]= 0x0A;
 		  }
 	}
 	status = 1;

@@ -1,0 +1,8 @@
+main.c:75:6:updateLED	8	static
+main.c:106:5:main	16	static
+main.c:197:6:SystemClock_Config	96	static
+main.c:238:13:MX_I2C1_Init	8	static
+main.c:284:13:MX_TIM6_Init	8	static
+main.c:308:6:HAL_TIM_PeriodElapsedCallback	16	static
+main.c:376:13:MX_GPIO_Init	48	static
+main.c:469:6:Error_Handler	8	static

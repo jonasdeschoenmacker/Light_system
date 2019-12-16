@@ -37,8 +37,8 @@ versie_13_12_19_V1.list \
 all: versie_13_12_19_V1.elf secondary-outputs
 
 # Tool invocations
-versie_13_12_19_V1.elf: $(OBJS) $(USER_OBJS) D:\Documenten\GitHub\Light_system\Sensor_light_system\Code\versie_13_12_19_V1\STM32F030C8TX_FLASH.ld
-	arm-none-eabi-gcc -o "versie_13_12_19_V1.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0 -T"D:\Documenten\GitHub\Light_system\Sensor_light_system\Code\versie_13_12_19_V1\STM32F030C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="versie_13_12_19_V1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+versie_13_12_19_V1.elf: $(OBJS) $(USER_OBJS) C:\Users\Jonas\Documents\school\KULeuven\jaar1\semester1\Elektronische\ tech\ Labo\Light_system\Sensor_light_system\Code\versie_15_12_19_V1\STM32F030C8TX_FLASH.ld
+	arm-none-eabi-gcc -o "versie_13_12_19_V1.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0 -T"C:\Users\Jonas\Documents\school\KULeuven\jaar1\semester1\Elektronische tech Labo\Light_system\Sensor_light_system\Code\versie_15_12_19_V1\STM32F030C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="versie_13_12_19_V1.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
